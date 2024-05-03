@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.4" sequence="0" timestamp="1714414108105" analysisTimestamp="1714428663803" release="">
+  <Project projectName="Task Master">
+    <Jar>C:\Users\ravis\OneDrive\Documents\NCI\SWD\taskmaster ca2</Jar>
+  </Project>
+  <BugInstance type="RC_REF_COMPARISON" priority="1" rank="1" abbrev="RC" category="CORRECTNESS">
+    <Class classname="com.taskmaster.entity.AppUser" classAnnotationNames="jakarta.persistence.Entity">
+      <SourceLine classname="com.taskmaster.entity.AppUser" sourcefile="AppUser.java" sourcepath="com/taskmaster/entity/AppUser.java"/>
+    </Class>
+    <Method classname="com.taskmaster.entity.AppUser" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" classAnnotationNames="jakarta.persistence.Entity">
+      <SourceLine classname="com.taskmaster.entity.AppUser" start="180" end="187" startBytecode="0" endBytecode="80" sourcefile="AppUser.java" sourcepath="com/taskmaster/entity/AppUser.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Long;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Long" start="73" end="2239" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Type>
+    <Field classname="com.taskmaster.entity.AppUser" name="id" signature="Ljava/lang/Long;" isStatic="false" role="FIELD_VALUE_OF" classAnnotationNames="jakarta.persistence.Entity">
+      <SourceLine classname="com.taskmaster.entity.AppUser" sourcefile="AppUser.java" sourcepath="com/taskmaster/entity/AppUser.java"/>
+    </Field>
+    <SourceLine classname="com.taskmaster.entity.AppUser" start="188" end="188" startBytecode="81" endBytecode="81" sourcefile="AppUser.java" sourcepath="com/taskmaster/entity/AppUser.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="30">
+    <MissingClass>com.google.gson.Gson</MissingClass>
+    <MissingClass>jakarta.persistence.EntityNotFoundException</MissingClass>
+    <MissingClass>jakarta.servlet.http.HttpServletRequest</MissingClass>
+    <MissingClass>jakarta.servlet.http.HttpSession</MissingClass>
+    <MissingClass>org.springframework.boot.SpringApplication</MissingClass>
+    <MissingClass>org.springframework.context.ConfigurableApplicationContext</MissingClass>
+    <MissingClass>org.springframework.data.jpa.repository.JpaRepository</MissingClass>
+    <MissingClass>org.springframework.http.HttpStatus</MissingClass>
+    <MissingClass>org.springframework.http.HttpStatusCode</MissingClass>
+    <MissingClass>org.springframework.http.ResponseEntity</MissingClass>
+    <MissingClass>org.springframework.security.authentication.ProviderManager</MissingClass>
+    <MissingClass>org.springframework.security.authentication.dao.DaoAuthenticationProvider</MissingClass>
+    <MissingClass>org.springframework.security.config.Customizer</MissingClass>
+    <MissingClass>org.springframework.security.config.annotation.web.builders.HttpSecurity</MissingClass>
+    <MissingClass>org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer</MissingClass>
+    <MissingClass>org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry</MissingClass>
+    <MissingClass>org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$AuthorizedUrl</MissingClass>
+    <MissingClass>org.springframework.security.config.annotation.web.configurers.CsrfConfigurer</MissingClass>
+    <MissingClass>org.springframework.security.config.annotation.web.configurers.FormLoginConfigurer</MissingClass>
+    <MissingClass>org.springframework.security.config.annotation.web.configurers.LogoutConfigurer</MissingClass>
+    <MissingClass>org.springframework.security.config.annotation.web.configurers.SessionManagementConfigurer</MissingClass>
+    <MissingClass>org.springframework.security.config.annotation.web.configurers.SessionManagementConfigurer$ConcurrencyControlConfigurer</MissingClass>
+    <MissingClass>org.springframework.security.core.authority.SimpleGrantedAuthority</MissingClass>
+    <MissingClass>org.springframework.security.core.userdetails.UserDetails</MissingClass>
+    <MissingClass>org.springframework.security.core.userdetails.UserDetailsService</MissingClass>
+    <MissingClass>org.springframework.security.core.userdetails.UsernameNotFoundException</MissingClass>
+    <MissingClass>org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder</MissingClass>
+    <MissingClass>org.springframework.security.crypto.password.PasswordEncoder</MissingClass>
+    <MissingClass>org.springframework.security.web.SecurityFilterChain</MissingClass>
+    <MissingClass>org.springframework.web.servlet.ModelAndView</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 29 Apr 2024 19:08:28 +0100" total_classes="18" referenced_classes="80" total_bugs="1" total_size="428" num_packages="11" java_version="21.0.2" vm_version="21.0.2+13-LTS-58" cpu_seconds="17.03" clock_seconds="175.01" peak_mbytes="221.24" alloc_mbytes="10208.00" gc_seconds="0.09" priority_1="1">
+    <PackageStats package="com.example.taskmanager" total_bugs="0" total_types="1" total_size="5">
+      <ClassStats class="com.example.taskmanager.TaskManagerApplicationTests" sourceFile="TaskManagerApplicationTests.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.taskmaster" total_bugs="0" total_types="1" total_size="6">
+      <ClassStats class="com.taskmaster.TaskManagerApplication" sourceFile="TaskManagerApplication.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.taskmaster.controller" total_bugs="0" total_types="4" total_size="64">
+      <ClassStats class="com.taskmaster.controller.DashboardController" sourceFile="DashboardController.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.taskmaster.controller.EpicController" sourceFile="EpicController.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="com.taskmaster.controller.LoginController" sourceFile="LoginController.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.taskmaster.controller.RegistrationController" sourceFile="RegistrationController.java" interface="false" size="20" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.taskmaster.entity" total_bugs="1" total_types="2" total_size="170" priority_1="1">
+      <ClassStats class="com.taskmaster.entity.AppUser" sourceFile="AppUser.java" interface="false" size="106" bugs="1" priority_1="1"/>
+      <ClassStats class="com.taskmaster.entity.Epic" sourceFile="Epic.java" interface="false" size="64" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.taskmaster.enums" total_bugs="0" total_types="2" total_size="23">
+      <ClassStats class="com.taskmaster.enums.AppUserRole" sourceFile="AppUserRole.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.taskmaster.enums.Status" sourceFile="Status.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.taskmaster.exception" total_bugs="0" total_types="1" total_size="9">
+      <ClassStats class="com.taskmaster.exception.RestException" sourceFile="RestException.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.taskmaster.model" total_bugs="0" total_types="1" total_size="50">
+      <ClassStats class="com.taskmaster.model.RegisterationRequest" sourceFile="RegisterationRequest.java" interface="false" size="50" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.taskmaster.repository" total_bugs="0" total_types="2" total_size="5">
+      <ClassStats class="com.taskmaster.repository.EpicRepo" sourceFile="EpicRepo.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.taskmaster.repository.UserRepo" sourceFile="UserRepo.java" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.taskmaster.security" total_bugs="0" total_types="1" total_size="29">
+      <ClassStats class="com.taskmaster.security.WebSecurityConfig" sourceFile="WebSecurityConfig.java" interface="false" size="29" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.taskmaster.service" total_bugs="0" total_types="2" total_size="53">
+      <ClassStats class="com.taskmaster.service.AppUserService" sourceFile="AppUserService.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="com.taskmaster.service.EpicService" sourceFile="EpicService.java" interface="false" size="28" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.taskmaster.utility" total_bugs="0" total_types="1" total_size="14">
+      <ClassStats class="com.taskmaster.utility.Transformer" sourceFile="Transformer.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="1162" invocations="2" avgMicrosecondsPerInvocation="581223" maxMicrosecondsPerInvocation="760662" standardDeviationMicrosecondsPerInvocation="179439"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="976" invocations="803" avgMicrosecondsPerInvocation="1215" maxMicrosecondsPerInvocation="36964" standardDeviationMicrosecondsPerInvocation="2776"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="328" invocations="80" avgMicrosecondsPerInvocation="4107" maxMicrosecondsPerInvocation="39595" standardDeviationMicrosecondsPerInvocation="7171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="287" invocations="811" avgMicrosecondsPerInvocation="354" maxMicrosecondsPerInvocation="9421" standardDeviationMicrosecondsPerInvocation="425"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="244" invocations="80" avgMicrosecondsPerInvocation="3060" maxMicrosecondsPerInvocation="24982" standardDeviationMicrosecondsPerInvocation="5355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="201" invocations="306" avgMicrosecondsPerInvocation="659" maxMicrosecondsPerInvocation="9411" standardDeviationMicrosecondsPerInvocation="1097"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="140" invocations="144" avgMicrosecondsPerInvocation="975" maxMicrosecondsPerInvocation="50676" standardDeviationMicrosecondsPerInvocation="4439"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="119" invocations="117" avgMicrosecondsPerInvocation="1019" maxMicrosecondsPerInvocation="44786" standardDeviationMicrosecondsPerInvocation="4221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="115" invocations="120" avgMicrosecondsPerInvocation="965" maxMicrosecondsPerInvocation="67385" standardDeviationMicrosecondsPerInvocation="6277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="112" invocations="80" avgMicrosecondsPerInvocation="1408" maxMicrosecondsPerInvocation="22533" standardDeviationMicrosecondsPerInvocation="2993"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="102" invocations="117" avgMicrosecondsPerInvocation="873" maxMicrosecondsPerInvocation="14521" standardDeviationMicrosecondsPerInvocation="1583"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="100" invocations="117" avgMicrosecondsPerInvocation="862" maxMicrosecondsPerInvocation="5354" standardDeviationMicrosecondsPerInvocation="1040"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="98" invocations="117" avgMicrosecondsPerInvocation="843" maxMicrosecondsPerInvocation="33689" standardDeviationMicrosecondsPerInvocation="3114"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="85" invocations="80" avgMicrosecondsPerInvocation="1074" maxMicrosecondsPerInvocation="9587" standardDeviationMicrosecondsPerInvocation="2062"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="84" invocations="692" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="2467" standardDeviationMicrosecondsPerInvocation="230"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="82" invocations="117" avgMicrosecondsPerInvocation="701" maxMicrosecondsPerInvocation="4843" standardDeviationMicrosecondsPerInvocation="897"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="79" invocations="117" avgMicrosecondsPerInvocation="682" maxMicrosecondsPerInvocation="26024" standardDeviationMicrosecondsPerInvocation="2389"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="71" invocations="80" avgMicrosecondsPerInvocation="888" maxMicrosecondsPerInvocation="10325" standardDeviationMicrosecondsPerInvocation="1596"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
